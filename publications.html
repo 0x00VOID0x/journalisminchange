@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Journalism In Change">
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Journalism in Change</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href="stylesheets/jquery-ui.structure.css" rel="stylesheet"/>
+		<link href="stylesheets/jquery-ui.theme.css" rel="stylesheet"/>
+		
+		<script>
+			//Executes when document is ready
+			$(document).ready(function () {
+				
+				
+				//Animation
+				$('#pages').tabs({show: 'fade', hide: 'fade'});
+				
+				//Windows hash (tab links)
+			//	$('#pages').tabs({
+			//		activate: function(event, ui) {
+			//			window.location.hash = ui.newPanel.attr('id');
+			//			}
+			//		});
+			
+				//Prevent annoying jump
+				$('#tabs ul li a').click(function(e) {
+					var pos = $(window).scrollTop();
+					location.hash = $(this).attr('href');
+					$(window).scrollTop(pos);
+					
+				$('img').fadeIn();
+				});
+				
+			});
+			
+		</script>
+	</head>
+<body>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<img id="project_title" src="images/header.jpg" alt=""/>
+		</header>
+		<section class="nav-bar">
+		  <a href="index.html" class="btn">About the Project</a>
+		  <a href="our-team.html" class="btn">Our Team</a>
+		  <a href="events.html" class="btn">Events</a>
+		  <a href="publications.html" class="btn">Publications</a>
+		  <a href="contacts.html" class="btn">Contacts</a>
+		</section>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<section class="content_block">
+		<h2>PUBLICATIONS</h2>
+		<p>1. Gunnar Nygren  & Elena Degtereva (2012). <a href="files/2012-Journalism_practices-Nygren-Degtereva.pdf" target="new"> Russian and Swedish Journalists: Professional roles, ideals and daily reality. Journalism Practice, Volume 6, Issue 5-6, Routledge.</a>
+		</p>
+		<p>2. <a class="pdf" href="files/Journalism_in_Russia_Poland_and_Sweden_web.pdf" target="new">Journalism in Russia, Poland and Sweden – traditions, cultures and research / Ed. by Gunnar Nygren (ed.). Stockholm, Södertörns University, 2012.</a>
+		</p>
+		<p>3. <a class="pdf" href="files/Dobek_Barczyzn_Michel_poprawiony.pdf" target="new">Dobek-Ostrowska, Bogusława; Barczyszyn, Paulina; Michel, Adam (2013).  Zmiana w dziennikarstwie. Kultura zawodowa polskich dziennikarzy (badania ilościowe).</a> <a href="images/SM_2013no1.jpg" target="new">Media Studies</a> No 1 (52) Instytut Dziennikarstwa Universytetu Warszawskiego.
+		</p>
+		<p>4. <a class="pdf" href="files/book.pdf" target="new">Journalists in Three Media Systems. Polish, Russian and Swedish journalists about values and ideals, daily practice and the future (2013)</a> Journalism Faculty Lomonosov Moscow State University.
+		</p>
+		<p>5. <a class="pdf" href="http://www.iarigai.com/images/jpmtr-abstracts/web-214.pdf" target="new">Appelberg, Jonas; Johansson, Elena; Nygren, Gunnar; Baranowski, Pawel (2014). Social media in professional work of Polish, Russian and Swedish journalists.  Journal of Print and Media Technology Research, Vol. 3, No 2, IARIGAI.</a>
+		</p>
+		<p>6. <a class="pdf" href="http://ptks.pl/cejc/wp-content/uploads/2013/02/08-johansson-nygren.pdf" target="new">Johansson, Elena; Nygren, Gunnar (2014). Russian journalists and social media: updated traditions and new challenges. Central European Journal of Communications. Vol. 7, No 2.</a>
+		</p>
+		<p>7. <a class="pdf" href="http://balticworlds.com/the-blog-platform-livejournal-as-a-professional-tool-of-russian-journalists/" target="new">Johansson, Elena (2014). Blogging in Russia: The blog platform LiveJournal as a professional tool for Russian journalists. Baltic Worlds, Vol. VII, No 2-3.</a>
+		</p>
+		<p>8. Nygren, Gunnar; Dobek-Ostrowska, Boguslawa; Anikina Maria (2015). <a class="download" href="http://www.nordicom.gu.se/sites/default/files/kapitel-pdf/nordicom_review_36_2015_2_pp._79-95.pdf" target="new"> Professional autonomy Challenges and Opportunities in Poland, Russia and Sweden.</a> Nordicom Review, Vol. 36 No 2.
+		</p>
+		<p>9. <a class="pdf" href="files/2015-Ed-volume.pdf" target="new">Journalism in Change.  Journalistic Culture in Poland, Russia and Sweden / Ed. by Gunnar Nygren and Boguslawa Dobek-Ostrowska (eds.).</a>  Peter Lang, 2015.
+		</p>
+	</section>
+
+	<!-- FOOTER -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Copyright &copy <script>document.write(new Date().getFullYear())</script> Journalism in Change.</p>
+			<p class="credit">Designed by Maxim D</p>
+		  <!--
+		  Website is currently under validation<br>
+		  <a href="http://validator.w3.org/check/referer" target="new"> Check HTML 5 </a>
+		  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="new">Check CSS 3</a>
+		  <a href="https://validator.w3.org/checklink/referer" target="new">Check for Broken Links</a>
+		  <a href="https://validator.w3.org/mobile-alpha/referer" target="new">Check for Mobile Compatibility</a>
+		  //-->
+		</footer>
+	</div>
+</body>
+</html>

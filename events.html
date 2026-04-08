@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Journalism In Change">
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Journalism in Change</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href="stylesheets/jquery-ui.structure.css" rel="stylesheet"/>
+		<link href="stylesheets/jquery-ui.theme.css" rel="stylesheet"/>
+		
+		<script>
+			//Executes when document is ready
+			$(document).ready(function () {
+				
+				
+				//Animation
+				$('#pages').tabs({show: 'fade', hide: 'fade'});
+				
+				//Windows hash (tab links)
+			//	$('#pages').tabs({
+			//		activate: function(event, ui) {
+			//			window.location.hash = ui.newPanel.attr('id');
+			//			}
+			//		});
+			
+				//Prevent annoying jump
+				$('#tabs ul li a').click(function(e) {
+					var pos = $(window).scrollTop();
+					location.hash = $(this).attr('href');
+					$(window).scrollTop(pos);
+					
+				$('img').fadeIn();
+				});
+				
+			});
+			
+		</script>
+	</head>
+<body>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<img id="project_title" src="images/header.jpg" alt=""/>
+		</header>
+		<section class="nav-bar">
+		  <a href="index.html" class="btn">About the Project</a>
+		  <a href="our-team.html" class="btn">Our Team</a>
+		  <a href="events.html" class="btn">Events</a>
+		  <a href="publications.html" class="btn">Publications</a>
+		  <a href="contacts.html" class="btn">Contacts</a>
+		</section>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<section class="content_block">
+		<h2>EVENTS</h2>
+		<h4>July 2015</h4>
+		<p>
+		The edited volume "Journalism in Change. Journalistic culture in Poland, Russia and Sweden", Gunnar Nygren and Boguslawa Dobek-Ostrowska (eds.) issued by Peter Lang edition. 
+		</p>
+		<h4>June 12-14, 2014</h4>
+		<p>
+		7th International Central and East European Media Conference CEECOM-2014, Wroclaw, Poland.
+		</p>
+		<h4>February 27-28, 2014</h4>
+		<p>
+		Concluding seminar at Södertörn University, Sweden. 
+		Main discussants: Epp Lauk, University of Jyväskylä (Finland) and Tartu University (Estonia) and Henrik Örnebring, Karlstad University (Sweden).
+		</p>
+		<h4>November 14-15, 2013</h4>
+		<p>
+		The 5th International Media Readings in Moscow, Russia. 
+		Mass Media and Communications – 2013. National Media Systems between National and Global: Models and Trends of the 2010s.
+		</p>
+		<h4>September 12-13, 2013</h4>
+		<p>
+		International conference "The Future of Journalism", Cardiff, UK
+		</p>
+		<h4>May, 2012</h4>
+		<p>
+		International conference   ICA, Phoenix, Arizona, USA
+		</p>
+		<h4>November 10-12, 2011</h4>
+		<p>
+		The 3rd International Media Readings in Moscow, Russia. 
+		Mass Media and Communications – 2011.  JOURNALISTIC CULTURES: FACING SOCIAL AND TECHNOLOGICAL CHANGES 
+		</p>
+		<h4>October, 2011</h4>
+		<p>
+		Project workshop. Wroclaw, Poland.
+		</p>
+		<h4>April, 2011</h4>
+		<p>
+		Project meeting. Södertörn University, Sweden.
+		</p>
+	</section>
+
+	<!-- FOOTER -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Copyright &copy <script>document.write(new Date().getFullYear())</script> Journalism in Change.</p>
+			<p class="credit">Designed by Maxim D</p>
+		  <!--
+		  Website is currently under validation<br>
+		  <a href="http://validator.w3.org/check/referer" target="new"> Check HTML 5 </a>
+		  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="new">Check CSS 3</a>
+		  <a href="https://validator.w3.org/checklink/referer" target="new">Check for Broken Links</a>
+		  <a href="https://validator.w3.org/mobile-alpha/referer" target="new">Check for Mobile Compatibility</a>
+		  //-->
+		</footer>
+	</div>
+</body>
+</html>

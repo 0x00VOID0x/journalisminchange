@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Journalism In Change">
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Journalism in Change</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href="stylesheets/jquery-ui.structure.css" rel="stylesheet"/>
+		<link href="stylesheets/jquery-ui.theme.css" rel="stylesheet"/>
+		
+		<script>
+			//Executes when document is ready
+			$(document).ready(function () {
+				
+				
+				//Animation
+				$('#pages').tabs({show: 'fade', hide: 'fade'});
+				
+				//Windows hash (tab links)
+			//	$('#pages').tabs({
+			//		activate: function(event, ui) {
+			//			window.location.hash = ui.newPanel.attr('id');
+			//			}
+			//		});
+			
+				//Prevent annoying jump
+				$('#tabs ul li a').click(function(e) {
+					var pos = $(window).scrollTop();
+					location.hash = $(this).attr('href');
+					$(window).scrollTop(pos);
+					
+				$('img').fadeIn();
+				});
+				
+			});
+			
+		</script>
+	</head>
+<body>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<img id="project_title" src="images/header.jpg" alt=""/>
+		</header>
+		<section class="nav-bar">
+		  <a href="index.html" class="btn">About the Project</a>
+		  <a href="our-team.html" class="btn">Our Team</a>
+		  <a href="events.html" class="btn">Events</a>
+		  <a href="publications.html" class="btn">Publications</a>
+		  <a href="contacts.html" class="btn">Contacts</a>
+		</section>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<section class="content_block">
+		<h2>OUR TEAM</h2>
+		<table>
+			<tr>
+				<td><img class="framed" src="images/team.jpg" width="308" height="266" alt=""></td>
+				<td>
+					Boguslawa Dobek Ostrowska, Professor, University of Wroclaw
+					<br>
+					Gunnar Nygren, Professor, Södertörn University
+					<br>
+					Maria Anikina, PhD, Moscow State University
+					<br>
+					Jöran Hök, PhD, Södertörn University
+					<br>
+					Elena Johansson, PhD, Södertörn University/Moscow State University
+				</td>
+			</tr>
+		</table>
+		
+		<h2>COOPERATION</h2>
+		<table>
+			<tr>
+				<td><a href="https://international.uni.wroc.pl/en/faculty-social-sciences" target="new"><img src="images/UnWroclaw.png" height="90" alt=""></a></td>
+				<td>Faculty  of Social Sciences, Wroclaw University, Poland</td>
+			</tr>
+			<tr>
+				<td><a href="http://www.journ.msu.ru/" target="new"><img src="images/JourFac.png" height="104" alt=""></a></td>
+				<td>Faculty of Journalism, Lomonosov Moscow State University, Russia</td>
+			</tr>
+			<tr>
+				<td><a href="http://www.sh.se/p3/ext/content.nsf/aget?openagent&key=about_the_school_1353397769036" target="new"><img src="images/SHlogo.png" height="86" alt=""></a></td>
+				<td>
+					<p>School of Social Sciences, Sodertorn University, Sweden</p>
+				</td>
+			</tr>
+		</table>
+	</section>
+
+	<!-- FOOTER -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Copyright &copy <script>document.write(new Date().getFullYear())</script> Journalism in Change.</p>
+			<p class="credit">Designed by Maxim D</p>
+		  <!--
+		  Website is currently under validation<br>
+		  <a href="http://validator.w3.org/check/referer" target="new"> Check HTML 5 </a>
+		  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="new">Check CSS 3</a>
+		  <a href="https://validator.w3.org/checklink/referer" target="new">Check for Broken Links</a>
+		  <a href="https://validator.w3.org/mobile-alpha/referer" target="new">Check for Mobile Compatibility</a>
+		  //-->
+		</footer>
+	</div>
+</body>
+</html>

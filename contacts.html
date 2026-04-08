@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Journalism In Change">
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Journalism in Change</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href="stylesheets/jquery-ui.structure.css" rel="stylesheet"/>
+		<link href="stylesheets/jquery-ui.theme.css" rel="stylesheet"/>
+		
+		<script>
+			//Executes when document is ready
+			$(document).ready(function () {
+				
+				
+				//Animation
+				$('#pages').tabs({show: 'fade', hide: 'fade'});
+				
+				//Windows hash (tab links)
+			//	$('#pages').tabs({
+			//		activate: function(event, ui) {
+			//			window.location.hash = ui.newPanel.attr('id');
+			//			}
+			//		});
+			
+				//Prevent annoying jump
+				$('#tabs ul li a').click(function(e) {
+					var pos = $(window).scrollTop();
+					location.hash = $(this).attr('href');
+					$(window).scrollTop(pos);
+					
+				$('img').fadeIn();
+				});
+				
+			});
+			
+		</script>
+	</head>
+<body>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<img id="project_title" src="images/header.jpg" alt=""/>
+		</header>
+		<section class="nav-bar">
+		  <a href="index.html" class="btn">About the Project</a>
+		  <a href="our-team.html" class="btn">Our Team</a>
+		  <a href="events.html" class="btn">Events</a>
+		  <a href="publications.html" class="btn">Publications</a>
+		  <a href="contacts.html" class="btn">Contacts</a>
+		</section>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<section class="content_block">
+		<h2>CONTACTS</h2>
+		<p>
+			<b>Prof. Gunnar Nygren</b><br>
+			School of Social Sciences<br>
+			Sodertorn University
+		</p>
+		<p>
+			Email: <a href="mailto:&#103;&#117;&#110;&#110;&#097;&#114;&#046;&#110;&#121;&#103;&#114;&#101;&#110;&#064;&#115;&#104;&#046;&#115;&#101;">&#103;&#117;&#110;&#110;&#097;&#114;&#046;&#110;&#121;&#103;&#114;&#101;&#110;&#064;&#115;&#104;&#046;&#115;&#101;</a><br>
+			Tel.: +46 8 608 46 52<br>
+			Fax: +46 8 608 42 00
+		</p>
+		<br>
+		<p>
+			<b>Prof. Boguslawa Dobek-Ostrowska</b><br>
+			Department of Communication and Journalism Faculty of Social Sciences<br>
+			Wroclaw University
+		</p>
+		<p>
+			Email:  <a href="mailto:&#098;&#111;&#103;&#117;&#115;&#108;&#097;&#119;&#097;&#046;&#100;&#111;&#098;&#101;&#107;&#045;&#111;&#115;&#116;&#114;&#111;&#119;&#115;&#107;&#097;&#064;&#117;&#110;&#105;&#046;&#119;&#114;&#111;&#099;&#046;&#112;&#108;">&#098;&#111;&#103;&#117;&#115;&#108;&#097;&#119;&#097;&#046;&#100;&#111;&#098;&#101;&#107;&#045;&#111;&#115;&#116;&#114;&#111;&#119;&#115;&#107;&#097;&#064;&#117;&#110;&#105;&#046;&#119;&#114;&#111;&#099;&#046;&#112;&#108;</a><br>
+			Tel.: +48 71 375 50 69<br>
+			Fax: +48 71 375 50 60
+		</p>
+	</section>
+
+	<!-- FOOTER -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Copyright &copy <script>document.write(new Date().getFullYear())</script> Journalism in Change.</p>
+			<p class="credit">Designed by Maxim D</p>
+		  <!--
+		  Website is currently under validation<br>
+		  <a href="http://validator.w3.org/check/referer" target="new"> Check HTML 5 </a>
+		  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="new">Check CSS 3</a>
+		  <a href="https://validator.w3.org/checklink/referer" target="new">Check for Broken Links</a>
+		  <a href="https://validator.w3.org/mobile-alpha/referer" target="new">Check for Mobile Compatibility</a>
+		  //-->
+		</footer>
+	</div>
+</body>
+</html>
